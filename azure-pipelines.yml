@@ -12,6 +12,7 @@ pool:
 steps:
 - script: echo Hello, world from other branch!
   displayName: 'Run a one-line script'
+  #Sin PR no se ejecutó el pipeline
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
