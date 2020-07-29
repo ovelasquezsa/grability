@@ -13,8 +13,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world from other branch!
-  displayName: 'Run a one-line script'
+- script: echo Hello, world from other branch to NFT branch!
+  displayName: 'Run a one-line script on nft'
   #Sin PR no se ejecutó el pipeline
 
 - script: |
