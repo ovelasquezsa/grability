@@ -3,13 +3,13 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-resources:
-  pipelines:
-  - pipeline: tiggered   # Name of the pipeline resource
-    source: activator # Name of the triggering pipeline
+# resources:
+#   pipelines:
+#   - pipeline: tiggered   # Name of the pipeline resource
+#     source: activator # Name of the triggering pipeline
 
 trigger:
-- master
+- staging
 
 pr:
 - none
