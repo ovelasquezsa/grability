@@ -3,22 +3,17 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-
-
 trigger:
-- master
-
+    branches:
+      include:
+      - master
+      
 pr:
 - none
-
+  
 pool:
-  vmImage: 'ubuntu-latest'
+    vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script 1'
-
-- script:
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- script: echo Merged to staging branch!
+  displayName: 'Begin deploy process'
